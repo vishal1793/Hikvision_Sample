@@ -1,0 +1,70 @@
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: left;
+}
+
+.zoom{
+    overflow: hidden;
+    cursor: pointer;
+}
+.zoom-effect, .zoom .content{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.zoom-effect:hover{
+    transform: scale(1.2);
+}
+.zoom:hover .content{
+    transform: translateY(10px);
+}
+
+.light_zoom{
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.light_zoom:hover{
+    box-shadow: 0px 0px 7px 1px gray !important;
+}
+.light_zoom img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.light_zoom:hover img{
+    transform: scale(1.1);
+}
+
+.icon-size{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#home{
+    &:hover{
+        color: red;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    #navi{
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    #navi{
+        font-size: large;
+    }
+}

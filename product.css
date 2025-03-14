@@ -1,0 +1,48 @@
+
+.light_zoom{
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.light_zoom:hover{
+    box-shadow: 0px 0px 7px 1px gray !important;
+}
+.light_zoom img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.light_zoom:hover img{
+    transform: scale(1.1);
+}
+
+.zoom{
+    overflow: hidden;
+    cursor: pointer;
+}
+.zoom img, .zoom .content{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.zoom:hover img{
+    transform: scale(1.2);
+}
+.zoom:hover .content{
+    transform: translateY(10px);
+}
+
+
+#mybtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    height: 50px;
+    z-index: 99;
+}
